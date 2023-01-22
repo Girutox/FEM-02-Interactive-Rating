@@ -22,25 +22,32 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
+
+    <script>
+      function submitHandler(e) {}
+    </script>
   </head>
   <body>
     <main>
       <div class="card">
-        <div class="star">
-          <img src="./assets/images/star.svg" alt="star icon" />
-        </div>
-        <h1>How did we do?</h1>
-        <p>
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-        <div class="numbers">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-        </div>
+        <form onsubmit="submitHandler()">
+          <div class="star">
+            <img src="./assets/images/star.svg" alt="star icon" />
+          </div>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="numbers">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+          </div>
+          <button type="submit">SUBMIT</button>
+        </form>
       </div>
     </main>
   </body>
