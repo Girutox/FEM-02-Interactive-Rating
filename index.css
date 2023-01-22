@@ -19,7 +19,7 @@ main {
 
 .card {
   width: 400px;
-  height: 400px;
+  height: auto;
   background-color: rgb(35, 42, 56);
 
   border-radius: 15px;
@@ -111,4 +111,14 @@ main button {
 main button:hover {
   background-color: white;
   color: #ff6600;
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 13px;
+  }
+
+  .card {
+    margin: 1.5rem;
+  }
 }
