@@ -73,6 +73,12 @@ main p {
   cursor: pointer;
 }
 
+.numbers div:hover {
+  background-color: rgb(194, 194, 194);
+  color: white;
+  font-weight: 700;
+}
+
 .numbers div:last-child {
   margin-right: 0;
 }
