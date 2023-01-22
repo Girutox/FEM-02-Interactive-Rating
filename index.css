@@ -46,3 +46,30 @@ main h1 {
 main p {
   color: rgb(156, 156, 156);
 }
+
+.numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers div {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 1rem;
+
+  color: rgb(151, 151, 151);
+
+  cursor: pointer;
+}
+
+.numbers div:last-child {
+  margin-right: 0;
+}
