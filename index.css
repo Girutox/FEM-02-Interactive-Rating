@@ -25,7 +25,7 @@ main {
   border-radius: 15px;
 
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .star {
@@ -80,13 +80,14 @@ main p {
 main button {
   margin-top: 2rem;
   width: 100%;
-  padding: 0.6rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
 
   background-color: #ff6600;
   border: none;
 
   color: white;
-  border-radius: 15px;
+  border-radius: 25px;
   letter-spacing: 2px;
   font-size: 15px;
 
