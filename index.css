@@ -23,6 +23,9 @@ main {
   background-color: rgb(35, 42, 56);
 
   border-radius: 15px;
+
+  box-sizing: border-box;
+  padding: 2rem;
 }
 
 .star {
@@ -51,6 +54,8 @@ main p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: 1.5rem;
 }
 
 .numbers div {
@@ -73,7 +78,7 @@ main p {
 }
 
 main button {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   width: 100%;
   padding: 0.6rem;
 
