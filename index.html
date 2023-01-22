@@ -48,7 +48,7 @@
   <body>
     <main>
       <div class="card">
-        <section id="rating-view">
+        <section id="rating-view" style="display: none;">
           <div class="star">
             <img src="./assets/images/star.svg" alt="star icon" />
           </div>
@@ -65,6 +65,17 @@
             <div id="number5" onclick="numberClickHandler(5)">5</div>
           </div>
           <button type="button" onclick="submitHandler()">SUBMIT</button>
+        </section>
+        <section id="thankyou-view">
+          <div>
+            <img src="./assets/images/star.svg" alt="star icon" />
+          </div>
+          <div>You selected "N" out of "N"</div>
+          <h1>Thank you!</h1>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
         </section>
       </div>
     </main>
