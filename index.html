@@ -24,6 +24,10 @@
     <title>Frontend Mentor | Interactive rating component</title>
 
     <script>
+      function numberClickHandler(number) {
+        
+      }
+
       function submitHandler(e) {}
     </script>
   </head>
@@ -40,11 +44,11 @@
             feedback is appreciated to help us improve our offering!
           </p>
           <div class="numbers">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div class="selected">5</div>
+            <div id="number1" onclick="numberClickHandler(1)">1</div>
+            <div id="number2" onclick="numberClickHandler(2)">2</div>
+            <div id="number3" onclick="numberClickHandler(3)">3</div>
+            <div id="number4" onclick="numberClickHandler(4)">4</div>
+            <div id="number5" onclick="numberClickHandler(5)">5</div>
           </div>
           <button type="submit">SUBMIT</button>
         </form>
