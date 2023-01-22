@@ -42,3 +42,7 @@ main h1 {
   font-weight: 400;
   font-size: 30px;
 }
+
+main p {
+  color: rgb(156, 156, 156);
+}
