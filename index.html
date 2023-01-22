@@ -24,10 +24,20 @@
     <title>Frontend Mentor | Interactive rating component</title>
 
     <script>
-      function numberClickHandler(number) {
-        
-      }
+      let showThankYouState = 0;
 
+      function numberClickHandler(number) {
+        const selectedDiv = document.getElementById("number" + number.toString());
+
+        for (let index = 1; index <= 5; index++) {
+          if (index == number) {
+            selectedDiv.className = "selected";
+          } else {
+            document.getElementById("number" + index.toString()).className = "";
+          }
+        }
+      }
+      
       function submitHandler(e) {}
     </script>
   </head>
