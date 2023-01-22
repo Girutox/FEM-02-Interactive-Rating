@@ -24,7 +24,7 @@
     <title>Frontend Mentor | Interactive rating component</title>
 
     <script>
-      let showThankYouState = 0;
+      let selectedNumber = 0;
 
       function numberClickHandler(number) {
         const selectedDiv = document.getElementById(
@@ -38,17 +38,23 @@
             document.getElementById("number" + index.toString()).className = "";
           }
         }
+
+        selectedNumber = number;
       }
 
       function submitHandler() {
         document.getElementById("rating-view").style = "display: none";
+
+        document.getElementById("outOf").innerHTML = `You selected ${selectedNumber} out of 5`;
+        document.getElementById("thankyou-view").style = "display: block";
+        document.getElementsByClassName("card")[0].style = "width: 350px";
       }
     </script>
   </head>
   <body>
     <main>
       <div class="card">
-        <section id="rating-view" style="display: none;">
+        <section id="rating-view">
           <div class="star">
             <img src="./assets/images/star.svg" alt="star icon" />
           </div>
@@ -66,11 +72,11 @@
           </div>
           <button type="button" onclick="submitHandler()">SUBMIT</button>
         </section>
-        <section id="thankyou-view">
-          <div>
+        <section id="thankyou-view" style="display: none;">
+          <!-- <div>
             <img src="./assets/images/star.svg" alt="star icon" />
-          </div>
-          <div>You selected "N" out of "N"</div>
+          </div> -->
+          <span id="outOf">You selected "N" out of "N"</span>
           <h1>Thank you!</h1>
           <p>
             We appreciate you taking the time to give a rating. If you ever need
