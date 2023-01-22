@@ -73,6 +73,12 @@ main p {
   cursor: pointer;
 }
 
+.numbers div.selected {
+  background-color: #ff6600;
+  color: white;
+  font-weight: 700;
+}
+
 .numbers div:hover {
   background-color: rgb(194, 194, 194);
   color: white;
