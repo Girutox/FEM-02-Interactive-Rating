@@ -98,4 +98,11 @@ main button {
   font-size: 15px;
 
   font-family: inherit;
+
+  cursor: pointer;
+}
+
+main button:hover {
+  background-color: white;
+  color: #ff6600;
 }
